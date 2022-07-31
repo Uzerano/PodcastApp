@@ -1,0 +1,32 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.sitio-header {
+  @include m.bgImage("../img/header.jpg", v.$secundarioOpacity);
+  padding: 5rem 0 0 0;
+
+  .logo {
+    width: 20rem;
+    margin: 0 auto;
+    @include m.escritorio { 
+        margin: 0;
+    }
+  }
+
+  .contenido-header {
+    padding: 15rem 0;
+  }
+
+  .header-titulo {
+    color: v.$blanco;
+ 
+    @include m.tablet {
+      max-width: 65%;
+
+      font-size: 6rem;
+    }
+    @include m.escritorio {
+        max-width: 40%;
+    }
+  }
+}

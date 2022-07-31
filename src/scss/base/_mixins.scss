@@ -13,7 +13,7 @@
     }
 }
   
-@mixin desktop {
+@mixin escritorio {
     @media (min-width: v.$desktop) {
         @content;
     }
@@ -49,4 +49,11 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin bgImage ($url, $color) {
+    background-image: linear-gradient($color 0%, $color 100%), url($url);
+
+    background-repeat: no-repeat;
+    background-size: cover;
 }
