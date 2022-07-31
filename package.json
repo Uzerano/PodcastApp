@@ -24,5 +24,13 @@
   "browserslist": [
     "last 1 version",
     "> 1%"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uzerano/13-PodcastApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Uzerano/13-PodcastApp/issues"
+  },
+  "homepage": "https://github.com/Uzerano/13-PodcastApp#readme"
 }
