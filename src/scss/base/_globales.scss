@@ -39,6 +39,15 @@ h1, h2, h3 {
 h1 {
     font-size: 4rem;
 }
+
+h2 {
+    font-size: 3.2rem;
+   
+  @include m.telefono { 
+    font-size: 3.6rem;
+ 
+  }
+}
 h3 {
     font-size: 2.8rem;
     text-align: center;
@@ -47,4 +56,11 @@ h3 {
 ul {
     padding: 0;
     list-style: none;
+}
+
+.separacion {
+    padding: 3rem 0;
+    @include m.tablet { 
+        padding: 5rem 0;
+    }
 }

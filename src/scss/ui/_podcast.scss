@@ -2,8 +2,6 @@
 @use "base/mixins" as m;
 
 .podcast {
-  padding: 5rem 0;
-
   .podcast-grid {
     @include m.tablet {
       @include m.grid(2, 5rem);
@@ -13,27 +11,32 @@
 
   .contenido-podcast {
     margin: 5rem 0 0 0;
+
     @include m.tablet {
       margin: 0;
     }
   }
 
   .titulo-podcast {
-    font-size: 3.5rem;
-    position: relative;
+    display: inline-block;
+    margin: 3rem 0 0 0;
+    color: v.$secundario;
+    @include m.tablet { 
+        margin: 0;
+    }
+
     &::after {
-      content: "";
+      content: '';
       background-color: v.$primario;
       height: 1rem;
-      width: 30rem;
-      position: absolute;
-      top: 27px;
-      left: 0;
-      z-index: -1;
+      width: calc( 100% + 1rem);
+      display: block;
+      margin: -1.5rem 0 0 0;
     }
   }
 
   .texto-podcast {
-    font-size: 1.8rem;/*  */
+    font-size: 1.8rem;
   }
+ 
 }

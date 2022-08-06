@@ -1,0 +1,49 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.dinero {
+  background-color: v.$primario;
+
+  .dinero-grid {
+    @include m.tablet {
+      @include m.grid(5, 3rem);
+      align-items: center;
+    }
+  }
+  @include m.tablet {
+    .contenido-dinero {
+      grid-column: 1 / 4;
+    }
+
+    .imagen-dinero {
+      grid-column: 4 / 6;
+    }
+  }
+
+  .imagen-dinero {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: rotate(10deg);
+    }
+  }
+
+  .dinero-titulo {
+    display: inline-block;
+    margin: 3rem 0 0 0;
+    color: v.$secundario;
+    
+    @include m.tablet {
+      margin: 0;
+      
+    }
+
+    &::after {
+      content: "";
+      background-color: v.$blanco;
+        height: 1rem;
+      width: calc(100% + 1rem);
+      display: block;
+      margin: -1.5rem 0 0 0;
+    }
+  }
+}
