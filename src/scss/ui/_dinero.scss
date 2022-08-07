@@ -6,7 +6,7 @@
 
   .dinero-grid {
     @include m.tablet {
-      @include m.grid(5, 3rem);
+      @include m.grid(5, 4rem);
       align-items: center;
     }
   }
@@ -17,13 +17,10 @@
 
     .imagen-dinero {
       grid-column: 4 / 6;
-    }
-  }
-
-  .imagen-dinero {
-    transition: transform 0.3s ease;
-    &:hover {
-      transform: rotate(10deg);
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: rotate(10deg) scale(1.1);
+      }
     }
   }
 
@@ -31,19 +28,16 @@
     display: inline-block;
     margin: 3rem 0 0 0;
     color: v.$secundario;
-    
-    @include m.tablet {
-      margin: 0;
-      
-    }
-
     &::after {
       content: "";
       background-color: v.$blanco;
-        height: 1rem;
+      height: 1rem;
       width: calc(100% + 1rem);
       display: block;
       margin: -1.5rem 0 0 0;
+    }
+    @include m.tablet {
+      margin: 0;
     }
   }
 }
