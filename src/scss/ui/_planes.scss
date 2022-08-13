@@ -18,12 +18,16 @@
         padding: 15rem 4rem 4rem;
         text-align: center;
         flex-grow: 1;
-        border-bottom: 1px solid;
-        transition-property: transform;
-        transition-duration: 300ms;
-        &:hover {
-            transform: scale(1.1);
-          }
+        border-bottom: 1px solid #e1e1e1;
+     
+         @include m.tablet { 
+            border: none;
+            transition-property: transform;
+            transition-duration: 300ms;
+            &:hover {
+                transform: scale(1.1);
+              }
+         }
     }
 
     .planes-grid {
@@ -31,9 +35,9 @@
         flex-direction:column;
         @include m.tablet { 
             flex-direction: row;
-            justify-content: center;
             max-width: 80rem;
-            margin: 10rem auto 0 auto;
+            margin-inline: auto;
+            margin-block-start: 10rem;
         }
     }
 
@@ -57,11 +61,11 @@
     
        @include m.tablet { 
         order: 0;
+        margin: -5rem 0;
         border-radius: 2rem;
        z-index: 100;
-          padding: 20rem 2rem 2rem 2rem;
-          margin: -5rem  0;
-          background-position: 50% 7rem;
+       padding: 20rem 2rem 2rem 2rem;
+        background-position: 50% 7rem;
        }
        
   }
@@ -72,28 +76,22 @@
 
 
 
-   .boton-planes {
-    border: 2px solid v.$blanco;
-   }
  
 
+.listado {
+      margin: 0;
+  
+    li {
+        margin-bottom: 2rem;
+        @include m.tablet { 
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+      }
+}
 
-  li {
-    margin-bottom: 2rem;
-  }
 
-  .boton-planes {
-    background-color: v.$primario;
-    color: v.$secundario;
-    font-weight: 900;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    display: inline-block;
-    margin: 4rem 0 0 0;
-    &:hover{
-        background-color: #4deab3;
-    }
-  }
 
   .precio {
     font-weight: 900;
