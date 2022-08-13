@@ -1,59 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Podcast App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="build/css/app.css">
-  
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
     <header class="sitio-header">
       <div class="contenedor header-grid">
         <div class="logo">
-            <img src="build/img/logo.svg" alt="Imagen Logo">
+          <img src="build/img/logo.svg" alt="Imagen Logo" />
         </div>
 
         <div class="contenido-header">
-            <h1 class="header-titulo">
-                Tu plataforma para publicar tus podcast
-            </h1>
-            <a href="#" class="boton-primario">Crear Cuenta</a>
+          <h1 class="header-titulo">Tu plataforma para publicar tus podcast</h1>
+          <a href="#" class="boton-primario">Crear Cuenta</a>
         </div>
       </div>
     </header>
 
     <section class="podcast separacion">
-        <div class="contenedor podcast-grid">
-            <div class="imagen">
-                <img src="build/img/imagen_podcast.svg" alt="imagen podcast">
-            </div>
-            <div class="contenido-podcast">
-                <h2 class="titulo-podcast">Crea tu Podcast</h2>
-                <p class="texto-podcast">Nosotros lo distribuimos a las plataformas más populares como Google Podcast, Spotify, Apple Podcast y YouTube.</p>
-            </div>
+      <div class="contenedor podcast-grid">
+        <div class="imagen">
+          <img src="build/img/imagen_podcast.svg" alt="imagen podcast" />
         </div>
+        <div class="contenido-podcast">
+          <h2 class="titulo-podcast">Crea tu Podcast</h2>
+          <p class="texto-podcast">
+            Nosotros lo distribuimos a las plataformas más populares como Google
+            Podcast, Spotify, Apple Podcast y YouTube.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="dinero separacion">
-        <div class="contenedor dinero-grid">
-            <div class="contenido-dinero">
-                <h2 class="dinero-titulo">Llega a miles y gana dinero</h2>
-                <p class="dinero-texto">
-                    Los podcast se han convertido en un medio de entretenimiento que cada día gana más seguidores, con temas variados puedes crear tu propio podcast, ser escuchada(o) por miles de personas y convertir tu pasión en un negocio.
-                </p>
-            </div>
-            <div class="imagen-dinero">
-                <img src="build/img/podcast_cover.png" alt="Imagen Podcast">
-            </div>
+      <div class="contenedor dinero-grid">
+        <div class="contenido-dinero">
+          <h2 class="dinero-titulo">Llega a miles y gana dinero</h2>
+          <p class="dinero-texto">
+            Los podcast se han convertido en un medio de entretenimiento que
+            cada día gana más seguidores, con temas variados puedes crear tu
+            propio podcast, ser escuchada(o) por miles de personas y convertir
+            tu pasión en un negocio.
+          </p>
         </div>
+        <div class="imagen-dinero">
+          <img src="build/img/podcast_cover.png" alt="Imagen Podcast" />
+        </div>
+      </div>
     </section>
 
+    <section class="separacion estadisticas contenedor">
+      <h2 class="titulo-estadisticas">Estadísticas Detalladas</h2>
+      <p class="texto-estadisticas">
+        Nosotros lo distribuimos a las plataformas más populares como Google
+        Podcast, Spotify, Apple Podcast y YouTube.
+      </p>
+      <img src="build/img/grafica.svg" alt="Imagen Estadísticas" />
+    </section>
 
-</body>
+    <section class="planes separacion">
+      <div class="contenedor">
+        <h2 class="titulo-planes">Planes</h2>
+        <p class="texto-planes">
+          Inicia gratis, crece tu plan cuando sea necesario
+        </p>
+        <div class="planes-grid">
+          <div class="plan inicio">
+            <h3>Inicio</h3>
+            <p class="precio">$2,99 mes</p>
+            <ul>
+              <li>30 Episodios</li>
+              <li>Estadísticas</li>
+              <li>App para grabar</li>
+            </ul>
+            <a class="boton-planes" href="#">Inscribirme</a>
+          </div>
+          <!-- FIN DIV PLAN-->
+
+          <div class="plan negocio">
+            <h3>Negocio</h3>
+            <p class="precio">$6,99 mes</p>
+            <ul>
+              <li>Episodios ilimitados</li>
+              <li>Todas las plataformas</li>
+              <li>Estadísticas</li>
+              <li>App para grabar</li>
+              <li>Podcast Pagados</li>
+            </ul>
+            <a class="boton-planes" href="#">Inscribirme</a>
+          </div>
+          <!-- FIN DIV PLAN-->
+
+          <div class="plan pro">
+            <h3>Pro</h3>
+            <p class="precio">$4,99 mes</p>
+            <ul>
+              <li>50 Episodios</li>
+              <li>Todas las plataformas</li>
+              <li>Estadísticas</li>
+              <li>App para grabar</li>
+            </ul>
+            <a class="boton-planes" href="#">Inscribirme</a>
+          </div>
+          <!-- FIN DIV PLAN-->
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

@@ -40,23 +40,17 @@ h1 {
     font-size: 4rem;
 }
 
-h2 {
-    font-size: 3.2rem;
-   
-  @include m.telefono { 
-    font-size: 3.6rem;
- 
-  }
-}
 h3 {
     font-size: 2.8rem;
     text-align: center;
     text-transform: uppercase;
 }
+
 ul {
     padding: 0;
     list-style: none;
 }
+
 
 .separacion {
     padding: 3rem 0;

@@ -10,7 +10,7 @@
       align-items: center;
     }
   }
-  @include m.tablet {
+  
     .contenido-dinero {
       grid-column: 1 / 4;
     }
@@ -22,22 +22,9 @@
         transform: rotate(10deg) scale(1.1);
       }
     }
-  }
+  
 
   .dinero-titulo {
-    display: inline-block;
-    margin: 3rem 0 0 0;
-    color: v.$secundario;
-    &::after {
-      content: "";
-      background-color: v.$blanco;
-      height: 1rem;
-      width: calc(100% + 1rem);
-      display: block;
-      margin: -1.5rem 0 0 0;
-    }
-    @include m.tablet {
-      margin: 0;
-    }
-  }
+    @include m.titulos(v.$secundario, v.$blanco);
+}
 }

@@ -1,0 +1,103 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.planes {
+    background-color: v.$secundario;
+
+    .titulo-planes {
+        @include m.titulos(v.$blanco, v.$primario);
+    }
+
+
+    .texto-planes {
+        color: v.$blanco;
+    }
+
+    .plan {
+        padding: 15rem 4rem 4rem;
+        text-align: center;
+        flex-grow: 1;
+        border-bottom: 1px solid;
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover {
+            transform: scale(1.1);
+          }
+    }
+
+    .planes-grid {
+        display: flex;
+        flex-direction:column;
+        @include m.tablet { 
+            flex-direction: row;
+            justify-content: center;
+            max-width: 80rem;
+            margin: 10rem auto 0 auto;
+        }
+    }
+
+
+
+    .inicio, .pro {
+        background-color: v.$blanco;
+        @include m.tablet { 
+            padding: 15rem 2rem 2rem 2rem;
+        }
+    }
+
+    .inicio {
+   @include m.imagenIcono('../img/icono_inicio.svg');
+    }
+
+    .negocio {
+        order: -1;
+        background-color: v.$primario;
+   @include m.imagenIcono('../img/icono_negocio.svg');
+    
+       @include m.tablet { 
+        order: 0;
+        border-radius: 2rem;
+       z-index: 100;
+          padding: 20rem 2rem 2rem 2rem;
+          margin: -5rem  0;
+          background-position: 50% 7rem;
+       }
+       
+  }
+
+    .pro {
+       @include m.imagenIcono ('../img/icono_pro.svg');
+    }
+
+
+
+   .boton-planes {
+    border: 2px solid v.$blanco;
+   }
+ 
+
+
+  li {
+    margin-bottom: 2rem;
+  }
+
+  .boton-planes {
+    background-color: v.$primario;
+    color: v.$secundario;
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin: 4rem 0 0 0;
+    &:hover{
+        background-color: #4deab3;
+    }
+  }
+
+  .precio {
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}
