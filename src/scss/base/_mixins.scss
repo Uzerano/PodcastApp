@@ -61,9 +61,11 @@
   display: inline-block;
   color: $colorTexto;
   margin: 5rem 0 0 0;
+
   @include tablet {
     margin: 0;
   }
+
   &::after {
     content: "";
     background-color: $colorLinea;
@@ -77,6 +79,6 @@
 @mixin imagenIcono ($url) {
   background-image: url($url);
   background-repeat: no-repeat;
-background-position: 50% 2rem;
-background-size: 10rem;
+  background-position: 50% 2rem;
+  background-size: 10rem;
 }

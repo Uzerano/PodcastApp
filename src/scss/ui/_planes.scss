@@ -1,97 +1,87 @@
-
-@use 'base/variables' as v;
-@use 'base/mixins' as m;
+@use "base/variables" as v;
+@use "base/mixins" as m;
 
 .planes {
-    background-color: v.$secundario;
+  background-color: v.$secundario;
 
-    .titulo-planes {
-        @include m.titulos(v.$blanco, v.$primario);
-    }
-
-
-    .texto-planes {
-        color: v.$blanco;
-    }
-
-    .plan {
-        padding: 15rem 4rem 4rem;
-        text-align: center;
-        flex-grow: 1;
-        border-bottom: 1px solid #e1e1e1;
-     
-         @include m.tablet { 
-            border: none;
-            transition-property: transform;
-            transition-duration: 300ms;
-            &:hover {
-                transform: scale(1.1);
-              }
-         }
-    }
-
-    .planes-grid {
-        display: flex;
-        flex-direction:column;
-        @include m.tablet { 
-            flex-direction: row;
-            max-width: 80rem;
-            margin-inline: auto;
-            margin-block-start: 10rem;
-        }
-    }
-
-
-
-    .inicio, .pro {
-        background-color: v.$blanco;
-        @include m.tablet { 
-            padding: 15rem 2rem 2rem 2rem;
-        }
-    }
-
-    .inicio {
-   @include m.imagenIcono('../img/icono_inicio.svg');
-    }
-
-    .negocio {
-        order: -1;
-        background-color: v.$primario;
-   @include m.imagenIcono('../img/icono_negocio.svg');
-    
-       @include m.tablet { 
-        order: 0;
-        margin: -5rem 0;
-        border-radius: 2rem;
-       z-index: 100;
-       padding: 20rem 2rem 2rem 2rem;
-        background-position: 50% 7rem;
-       }
-       
+  .titulo-planes {
+    @include m.titulos(v.$blanco, v.$primario);
   }
 
-    .pro {
-       @include m.imagenIcono ('../img/icono_pro.svg');
+  .texto-planes {
+    color: v.$blanco;
+  }
+
+  .plan {
+    padding: 15rem 4rem 4rem;
+    text-align: center;
+    flex-grow: 1;
+    border-bottom: 1px solid #e1e1e1;
+
+    @include m.tablet {
+      border: none;
+      transition-property: transform;
+      transition-duration: 300ms;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
+  }
 
+  .planes-grid {
+    display: flex;
+    flex-direction: column;
+    @include m.tablet {
+      flex-direction: row;
+      max-width: 80rem;
+      margin-inline: auto;
+      margin-block-start: 10rem;
+    }
+  }
 
+  .inicio,
+  .pro {
+    background-color: v.$blanco;
+    @include m.tablet {
+      padding: 15rem 2rem 2rem 2rem;
+    }
+  }
 
- 
+  .inicio {
+    @include m.imagenIcono("../img/icono_inicio.svg");
+  }
 
-.listado {
-      margin: 0;
-  
+  .negocio {
+    order: -1;
+    background-color: v.$primario;
+    @include m.imagenIcono("../img/icono_negocio.svg");
+
+    @include m.tablet {
+      order: 0;
+      margin: -5rem 0;
+      border-radius: 2rem;
+      z-index: 100;
+      padding: 20rem 2rem 2rem 2rem;
+      background-position: 50% 7rem;
+    }
+  }
+
+  .pro {
+    @include m.imagenIcono("../img/icono_pro.svg");
+  }
+
+  .listado {
+    margin: 0;
+
     li {
-        margin-bottom: 2rem;
-        @include m.tablet { 
-            &:last-of-type{
-                margin-bottom: 0;
-            }
+      margin-bottom: 2rem;
+      @include m.tablet {
+        &:last-of-type {
+          margin-bottom: 0;
         }
       }
-}
-
-
+    }
+  }
 
   .precio {
     font-weight: 900;
