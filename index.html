@@ -120,27 +120,75 @@
     <section class="comentarios separacion">
       <div class="contenedor comentarios-grid">
         <div class="comentarios-imagen">
-          <img src="build/img/app.jpg" alt="Imagen APP">
+         <picture>
+          <source srcset="build/img/app.avif "  type="image/avif">
+          <source srcset="build/img/app.webp "  type="image/webp">
+          <img loading="lazy" src="build/img/app.jpg" alt="">
+         </picture>
         </div>
         <div class="comentarios-contenido">
             <h2 class="comentarios-titulo">Comentarios</h2>
-            <p class="comentarios-texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Cumque, voluptatum pariatur ea tempora aliquid quisquam 
-              sequi labore nemo debitis maiores, aperiam.
-            </p>
-            <p class="comentarios-texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Cumque, voluptatum pariatur ea tempora aliquid quisquam 
-              sequi labore nemo debitis maiores, aperiam.
-            </p>
-            <p class="comentarios-texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Cumque, voluptatum pariatur ea tempora aliquid quisquam 
-              sequi labore nemo debitis maiores, aperiam.
-            </p>
+            <div class="comentarios-texto">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque, voluptatum pariatur ea tempora aliquid quisquam 
+                sequi labore nemo debitis maiores, aperiam.</p>
+            </div>
+            <div class="comentarios-texto">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque, voluptatum pariatur ea tempora aliquid quisquam 
+                sequi labore nemo debitis maiores, aperiam.</p>
+            </div>
+            <div class="comentarios-texto">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque, voluptatum pariatur ea tempora aliquid quisquam 
+                sequi labore nemo debitis maiores, aperiam.</p>
+            </div>
+     
+            </div>
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="contenedor contenido-footer">
+
+        <div class="logo-footer">
+          <img src="build/img/logo.svg" alt="Imagen Logo Podcast">
+        </div>
+      
+       
+          <div class="info">
+            <h3>Soluciones</h3>
+           <ul>
+            <li><a class="boton-footer" href="#">Soluciones</a></li>
+            <li><a class="boton-footer" href="#">Gráficas</a></li>
+            <li><a class="boton-footer" href="#">Distribución</a></li>
+           </ul>
+          </div>
+
+          <div class="info">
+            <h3>Soporte</h3>
+            <ul>
+              <li><a class="boton-footer" href="#">Documentación</a></li>
+              <li><a class="boton-footer" href="#">Precios</a></li>
+              <li><a class="boton-footer" href="#">API</a></li>
+             </ul>
+          </div>
+          
+          <div class="info">
+            <h3>Podcast FM</h3>
+            <ul>
+              <li><a class="boton-footer" href="#">Nosotros</a></li>
+              <li><a class="boton-footer" href="#">Blog</a></li>
+              <li><a class="boton-footer" href="#">Clientes</a></li>
+             </ul>
+          </div>
+        
+
+      </div>
+      <p class="copyright">Podcast FM - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="src/js/imgsupport.js"></script>
   </body>
 </html>

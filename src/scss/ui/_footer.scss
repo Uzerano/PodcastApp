@@ -1,0 +1,36 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+.footer {
+  background-color: v.$secundario;
+
+  .logo-footer {
+    width: 20rem;
+    margin: 0 auto 5rem auto;
+  }
+
+  .contenido-footer {
+    padding: 5rem 0;
+    border-bottom: 2px solid v.$primario;
+    @include m.escritorio {
+      @include m.grid(4, 4rem);
+    }
+  }
+
+  .info {
+    text-align: left;
+
+    h3 {
+      color: v.$primario;
+      text-align: left;
+    }
+  }
+
+  .copyright {
+    color: v.$blanco;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 2rem 0 0 0;
+  }
+}
